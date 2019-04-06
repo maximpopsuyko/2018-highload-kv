@@ -11,14 +11,20 @@ repositories {
 }
 
 dependencies {
-    // Our beloved one-nio
-    compile("ru.odnoklassniki:one-nio:1.0.2")
-
     // Annotations for better code documentation
     compile("com.intellij:annotations:12.0")
 
-    // JUnit 5
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.1")
+    //server
+    compile("ru.odnoklassniki:one-nio:1.0.2")
+
+    //db
+    compile("org.rocksdb:rocksdbjni:5.14.2")
+
+    //logging
+    compile("ch.qos.logback:logback-classic:1.2.3")
+
+    // JUnit Jupiter test framework
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.3.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.3.1")
 
     // Guava for tests
