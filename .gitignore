@@ -4,6 +4,8 @@
 # But not Java files...
 !.gitignore
 !*.java
+!profiling/*
 
 # ...even if they are in subdirectories
 !*/
+
